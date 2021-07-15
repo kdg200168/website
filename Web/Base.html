@@ -9,13 +9,12 @@
 
   <script>
     $(document).ready(function(){
-      $('.slider').bxSlider();
+      $('.slider').bxSlider({
+        auto: true,
+        pager: false
+      });
     });
   </script>
-
-
-   
-
 </head>
 <body>
     
@@ -30,28 +29,69 @@
             </form>
             </div>
         
-           <div class="icon"> <a href="Base.html"><img src="images/cart.png" width="50px" height="50px"</a></div>
+           <div class="icon"> <a href="Base.html"><img src="images/cart.png" width="50px" height="50px"></a></div>
         
             <div class="icon"><a href="Base.html" ><img src="images/user.png" width="50px" height="50px"></a></div>
         </ul>
      </div>
     </header>
+    
     <sidebar>
-        <p>itemlist</p>
-        <!-- <ul>
-            <ul>メンズ
-                <li></li>
-            </ul> -->
+        <div>
+        <p style="text-align: center;">商品カテゴリ</p>
+        <hr>
+        </div>
+        <div>
+        <p style="text-align: left;">メンズ</p>
+        <ul class="nav2">
+            <li><a href="#">アウター</a>
+            <ul>
+                <li><a href="#">ジャケット</a></li>
+                <li><a href="#">コート</a></li>
+            </ul>
+            <li><a href="#">トップス</a>
+            <ul>
+                <li><a href="#">Tシャツ</a></li>
+                <li><a href="#">ポロシャツ</a></li>
+            </ul>
+            <li><a href="#">パンツ</a>
+                <ul>
+                    <li><a href="#">デニムパンツ</a></li>
+                    <li><a href="#">チノパンツ</a></li>
+                </ul>
+            <li><a href="#">スーツ</li></a>
         </ul>
 
+        </div>
+        <div>
+        <p style="text-align: left;">レディース</p>
+        <ul class="nav2">
+            <li><a href="#">アウター</li></a>
+            <li><a href="#">インナー</li></a>
+            <li><a href="#">パンツ</li></a>
+            <li><a href="#">スーツ</li></a>
+        </ul>
+
+        </div>
+        <div>
+        <p style="text-align: left;">キッズ</p>
+        <ul class="nav2">
+            <li><a href="#">アウター</li></a>
+            <li><a href="#">インナー</li></a>
+            <li><a href="#">パンツ</li></a>
+        </ul>
+ 
+        </div>
     </sidebar>
     <!-- <div id="sidebar">sidebar</div> -->
     <main>
-        <div class="slider">
+        <div style="width: 980px;">
+        <div class="slider" style="width: 980px;">
             <div><img src="images/blue0030.jpeg" width="980px" height="300px"></div>
             <div><img src="images/blue0030.jpeg" width="980px" height="300px"></div>
             <div><img src="images/blue0030.jpeg" width="980px" height="300px"></div>
           </div>
+        </div>
         <div class="sample" >content</div>
         <div class="sample" >content</div>
         <div class="sample" >content</div>
@@ -69,7 +109,7 @@
     </div> -->
     </div>
 
-    <footer  style="background-color: bisque;">
+    <footer>
         footer
     </footer>
 　</body>
