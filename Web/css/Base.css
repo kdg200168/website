@@ -257,3 +257,65 @@ div.sample {
   padding: 0;
   text-align: left;
 }
+
+.nav{
+  padding:2em;
+  display:flex;
+  justify-content:center;
+  background:#f3f3f3;
+  text-align: center;
+}
+a,span{
+  width:50px;
+  height:50px;
+  margin:2px;
+  line-height:50px;
+  text-align:center;
+  font-size:14px;
+  font-weight:bold;
+  text-decoration:none;
+  background:#fff;
+  color:#222;
+  transition:.3s;
+}
+/* a:hover{
+  background:gold;
+  border-radius:100%;
+  transform:rotate(360deg);
+} */
+.current{
+  background:gold;
+  border-radius:100%;
+}
+.dots{
+  background:none;
+}
+
+.item {
+  display: flex; /*横並び*/
+  background-color: burlywood;  
+  margin: 1%;
+}
+.item .image {
+  width: 400px; /*画像サイズ指定*/
+  height: 300px;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  position: relative;
+}
+.item .right {
+  margin: 0 0 0 20px;
+  padding: 0;
+}
+.item .title {
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  font-size: 18px;
+}
+.item .text {
+  /* margin: 10px 0 0; */
+  padding: 0;
+  /* text-align: center; */
+}
